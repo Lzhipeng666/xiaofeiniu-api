@@ -1,0 +1,29 @@
+{
+  "name": "1.0.0",
+  "version": "1.0.0",
+  "description": "小肥牛扫码点餐数据API子系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lzhipeng666/xiaofeiniu-api.git"
+  },
+  "keywords": [
+    "小肥牛",
+    "xiaofeiniu",
+    "点餐",
+    "扫码"
+  ],
+  "author": "Li zhipeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lzhipeng666/xiaofeiniu-api/issues"
+  },
+  "homepage": "https://github.com/Lzhipeng666/xiaofeiniu-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
