@@ -1,10 +1,12 @@
-/**
- * 小肥牛扫码点餐项目API子系统
- */
-const PORT=8090;
-const express=require('express');
-
-var app=express();
-app.listen(PORT,()=>{
-    console.log('Server Listening' +PORT)
-})
+const express=require("express");
+const bodyParser=require("body-parser");
+const cors=require("cors");
+const app=express();
+const Port=8090;
+app.listen(Port,()=>{
+    console.log('server listening'+Port+'...');
+});
+app.use(express.static(__dirname/public));
+app.use(bodyParser.urlencoded({
+    extended:false
+}));
