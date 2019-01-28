@@ -4,7 +4,24 @@
 const PORT=8090;
 const express=require('express');
 
+//创建HTTP应用服务器
 var app=express();
+//监听
 app.listen(PORT,()=>{
-    console.log('Server Listening' +PORT)
-})
+    console.log('Server Listening:'+PORT)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
