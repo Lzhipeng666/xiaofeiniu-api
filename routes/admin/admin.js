@@ -6,8 +6,8 @@ const pool = require('../../pool');
 var router = express.Router();
 module.exports = router;
 
-/*  GET请求可以有主体吗？
-*API:  GET /admin/login/:aname/:apwd   
+/*
+*GET /admin/login/:aname/:apwd   
 *完成用户登录验证(提示：有的项目中此处选择POST请求)
 *返回数据：
 * {code: 200, msg: 'login succ'}
