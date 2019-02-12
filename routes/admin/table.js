@@ -21,3 +21,15 @@ router.get('/', (req, res)=>{
     res.send(result);
   })
 })
+
+/*
+*post  /admin/table
+*添加桌台
+ */
+
+router.post('/', (req, res)=>{
+  pool.query('INSERT INTO xfn_table SET ?', req.body, (err, result)=>{
+    if(err)throw err;
+    res.send({code:200, msg:'table added succ', tableId:result.insertId}) //将INSERT语句产生的自增编号输出给客户端
+  })
+})
