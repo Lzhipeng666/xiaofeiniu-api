@@ -11,11 +11,11 @@ var pool = mysql.createPool({
     database: 'xiaofeiniu',  //默认连接的数据库
     connectionLimit: 10      //连接池中连接数量
     */
-   host:process.env.MYSQL_HOST,
-   port:process.env.MYSQL_PORT,
-   user:process.env.ACCESSKEY,
-   password:process.env.SECRETKEY,
-   database:'app_'+process.env.MYSQL_APPNAME,
+   host     :process.env.MYSQL_HOST,
+   port     :process.env.MYSQL_PORT,
+   user     :process.env.ACCESSKEY,
+   password :process.env.SECRETKEY,
+   database :'app_'+process.env.APPNAME,
    connectionLimit:3
 });
 module.exports = pool;
